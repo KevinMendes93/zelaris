@@ -1,0 +1,6 @@
+export enum StatusServico {
+  AGENDADO = 'AGENDADO',
+  EM_ANDAMENTO = 'EM_ANDAMENTO',
+  FINALIZADO = 'FINALIZADO',
+  CANCELADO = 'CANCELADO',
+}

@@ -1,0 +1,16 @@
+export enum OrgaoEmissor {
+  SSP = 'SSP',
+  DETRAN = 'DETRAN',
+  POLITEC = 'POLITEC',
+  POLICIA_FEDERAL = 'Polícia Federal',
+  POLITEC_MT = 'POLITEC/MT',
+  SESP = 'SESP',
+  PM = 'PM',
+  PC = 'PC',
+  CGPI = 'CGPI',
+  DGPC = 'DGPC',
+  IFP = 'IFP',
+  IML = 'IML',
+  SDS = 'SDS',
+  SEJUSP = 'SEJUSP',
+}

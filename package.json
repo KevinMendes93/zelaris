@@ -1,0 +1,20 @@
+{
+  "name": "zelaris",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "npm --prefix apps/zelaris-frontend run dev",
+    "dev:backend": "npm --prefix apps/zelaris-backend run dev",
+    "build": "npm --prefix apps/zelaris-frontend run build && npm --prefix apps/zelaris-backend run build",
+    "lint": "npm --prefix apps/zelaris-frontend run lint && npm --prefix apps/zelaris-backend run lint",
+    "test": "npm --prefix apps/zelaris-backend run test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}

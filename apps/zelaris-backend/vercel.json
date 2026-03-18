@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build && npm run migration:run:prod",
+  "outputDirectory": "dist",
+  "installCommand": "npm install --include=dev",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/index.ts"
+    }
+  ]
+}
